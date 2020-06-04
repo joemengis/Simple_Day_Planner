@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./Assets/style.css" />
+    
+
     <title>Work Day Scheduler</title>
   </head>
 
@@ -30,23 +32,19 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div hour="9" class="task hour time-block">
-        <form>
-          <textarea name="task" placeholder="Task" id="" cols="30" rows="10"></textarea>
+      <div hour="9" class="time-block task">
+        <form class="row">
+          <div hour="9" class="hour">9am</div>
+          <textarea class="task" placeholder="Task" id="" cols="78"></textarea>
           <button type="submit" class="btn saveBtn"></button> 
         </form>
       </div>
-      <div hour="13" class="task">
-        <form>
-          <textarea name="task" id="" cols="30" rows="10"></textarea>
-          <button type="submit" class="btn"></button> 
-        </form>
-      </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.25.1/moment.min.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://rawgit.com/moment/moment/2.2.1/min/moment.min.js"></script>
     <script  src="./Assets/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+    
   </body>
 </html>
