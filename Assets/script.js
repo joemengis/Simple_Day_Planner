@@ -1,13 +1,14 @@
 $(document).ready(function() {
-    
+
+    //add current day to header
     $("#currentDay").text( moment().format('ddd MMM Do, YYYY') );
 
+    //compare all tasks to moment current hour and add appropriate class
     $('.task').each(function() {
         var hour = $(this).attr('hour');
         
-        // console.log("Hour var", hour)
+        // clock time from moment
         var currentHour = moment();
-     
         var comparedHour = moment().hour(Number(hour));
         var task = localStorage.getItem(hour);
         
