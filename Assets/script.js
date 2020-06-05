@@ -1,9 +1,11 @@
 $(document).ready(function() {
+    
+    $("#currentDay").text( moment().format('ddd MMM Do, YYYY') );
 
     $('.task').each(function() {
         var hour = $(this).attr('hour');
         
-        console.log("Hour var", hour)
+        // console.log("Hour var", hour)
         var currentHour = moment();
      
         var comparedHour = moment().hour(Number(hour));
@@ -31,7 +33,7 @@ $(document).ready(function() {
         var hour = $(this).parent().attr("hour");
         var task = event.target.task.value;
       
-        localStorage.setItem(hour, task)
+        localStorage.setItem(hour, task);
         
     }); 
 
